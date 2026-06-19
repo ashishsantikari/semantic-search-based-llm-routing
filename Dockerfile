@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 
 # Install Python dependencies (CPU-only torch)
-RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch>=2.5.0,<2.6.0 \
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu "torch>=2.5.0,<2.6.0" \
     && pip install --no-cache-dir -r requirements.txt
 
 # Pre-cache the sentence transformer model so it's baked into the image
