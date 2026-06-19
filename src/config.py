@@ -15,7 +15,7 @@ EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 # ── Routing thresholds ───────────────────────────────────────────────────────
 # Minimum cosine-similarity score required to consider a vertical match.
 # Values range from 0 (everything matches) to 1 (exact match only).
-SIMILARITY_THRESHOLD = 0.30
+SIMILARITY_THRESHOLD = 0.20
 
 # Number of top-matching verticals to consider when routing a query.
 TOP_K_VERTICALS = 1
